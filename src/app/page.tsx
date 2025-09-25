@@ -10,13 +10,11 @@ export default function Home() {
     <div>
       <Header />
       <main>
-        <section className="flex flex-col h-screen text-center md:text-left items-center px-4 md:px-16">
-          <div className="mt-8">
-            <h1 className="text-7xl md:text-9xl text-amber-500 font-bold">$TALENT</h1>
-          </div>
+        <section className="flex flex-col h-screen text-center md:text-left items-center  justify-center px-4 md:px-16">
           <div className="flex flex-col-reverse md:flex-row items-center justify-between md:px-32 md:gap-32 mt-8">
             <div>
-              <p className="text-3xl md:text-4xl font-bold">BACKBONE OF THE FUTURE MEGA CITY </p>
+               <h1 className="text-7xl md:text-9xl pb-4 text-amber-500 font-bold">$TALENT</h1>
+              <p className="text-3xl md:text-4xl pb-2 font-bold">BACKBONE OF THE FUTURE MEGA CITY </p>
               <p className="md:text-lg">The flagship crypto project powering a 200,000-citizen mega city and its metaverse twin. From meme culture
                 to real-world finance, $TALENT is more than currency; it&apos;s a movement of creativity, innovation,
                 and community governance.</p>
@@ -29,7 +27,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="flex flex-col md:flex-row md:items-center md:justify-center gap-8 px-6 md:px-32 py-16 md:py-24">
+        <section className="bg-gradient-to-b from-amber-950 to-transparent flex flex-col md:flex-row md:items-center md:justify-center gap-8 px-6 md:px-32 py-16 md:py-24" >
           <div className="flex justify-center">
             <Image src="/images/art-02.png" alt="image check" width={300} height={300} className="w-auto h-96 md:h-148" />
           </div>
@@ -50,9 +48,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="bg-amber-100 flex flex-col px-6 md:px-16 py-24 md:py-32 items-center ">
+        <section className="bg-amber-100 flex flex-col px-6 md:px-16 py-32 items-center ">
           <h1 className="text-5xl md:text-7xl font-bold mb-4 text-amber-700">OUR TOKENOMICS</h1>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-16 text-black">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-16 max-w-4xl text-black">
             <div className="rounded-xl p-4  md:px-16 md:py-8  bg-neutral-100 border-t-2 border-l-2 border-b-5 border-r-5 border-red-500">
               <h1 className="flex flex-col">
                 <span className="font-bold text-3xl">700B</span>
@@ -116,6 +114,27 @@ export default function Home() {
               </h1>
             </div>
 
+          </div>
+
+          <div className="bg-amber-800 p-4 mt-8 rounded-2xl flex flex-col items-center w-full max-w-5xl">
+            <h1 className="text-5xl md:text-6xl text-amber-200 font-bold mb-4">TAX SLIPPAGES</h1>
+            <div className="grid grid-cols-2 md:grid-cols-3 space-x-16 space-y-4 ">
+              <div className="flex flex-col">
+                <h1 className="font-semibold text-2xl">5%</h1>
+                <p className="text-lg md:text-xl">BUY/SELL</p>
+              </div>
+
+              <div className="flex flex-col">
+                <h1 className="font-semibold text-2xl">BNB</h1>
+                <p className="text-lg md:text-xl">REWARDS</p>
+              </div>
+
+              <div className="flex flex-col">
+                <h1 className="font-semibold text-2xl">BURN</h1>
+                <p className="text-lg md:text-xl">AUTO MECHANISM</p>
+              </div>
+
+            </div>
           </div>
 
         </section>
@@ -216,7 +235,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-24 md:py-32 px-4 md:px-16 border-t-3 border-b-3 border-amber-200">
+        <section className="py-24 md:py-32 px-4 md:px-16 border-t-3 border-b-3 border-amber-200 bg-cover bg-center bg-no-repeat bg-fixed" style={{backgroundImage: 'url("/images/bg-01.png")', minHeight: '600px'}}>
           <div className="max-w-6xl mx-auto">
             <h1 className="text-5xl md:text-7xl font-bold text-center mb-4 text-amber-500">HOW TO BUY</h1>
             <p className="text-center text-lg md:text-xl mb-16 text-gray-300">Get your $TALENT tokens in 4 simple steps</p>
@@ -275,7 +294,6 @@ export default function Home() {
               <button 
                 onClick={() => {
                   navigator.clipboard.writeText('0x38Aec84f305564cB2625430A294382Cf33e3c317');
-                  // You can add a toast notification here
                   alert('Contract address copied to clipboard!');
                 }}
                 className="border-2 border-amber-500 px-8 py-4 rounded-lg font-bold text-lg hover:bg-amber-500 transition-all duration-300"
@@ -287,12 +305,16 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-16 px-4 md:px-16 bg-amber-700">
+        <section className="py-16 px-4 md:px-16 bg-amber-200">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-5xl md:text-7xl font-bold text-center mb-16 ">FAQs</h1>
+            <h1 className="text-5xl md:text-7xl font-bold text-center text-amber-700 mb-16 ">FAQs</h1>
             
             <FAQSection />
           </div>
+        </section>
+
+        <section>
+
         </section>
       </main>
 
@@ -373,18 +395,18 @@ function FAQSection() {
     <div className="space-y-4">
       {faqs.map((faq, index) => (
         <div key={index} className="group">
-          <div className="bg-amber-200 rounded-lg overflow-hidden">
+          <div className="bg-amber-700 text-white rounded-lg overflow-hidden">
             <button 
               onClick={() => setOpenFAQ(openFAQ === index ? null : index)}
-              className="w-full p-6 text-left flex justify-between items-center hover:bg-gray-100 transition-colors"
+              className="w-full p-6 text-left flex justify-between items-center"
             >
-              <h3 className="text-lg font-bold text-black">{faq.question}</h3>
-              <div className="w-8 h-8 bg-amber-500 rounded flex items-center justify-center text-white font-bold">
+              <h3 className="text-lg font-bold text-white">{faq.question}</h3>
+              <div className="w-8 h-8 bg-amber-200 rounded flex items-center justify-center text-black font-bold">
                 {openFAQ === index ? '−' : '+'}
               </div>
             </button>
             {openFAQ === index && (
-              <div className="px-6 pb-6 text-black">
+              <div className="px-6 pb-6 text-white">
                 <p>{faq.answer}</p>
               </div>
             )}
@@ -394,6 +416,9 @@ function FAQSection() {
     </div>
   );
 }
+
+
+
 
 
 
