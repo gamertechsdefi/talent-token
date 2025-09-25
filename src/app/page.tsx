@@ -135,6 +135,11 @@ export default function Home() {
                 <p className="text-lg md:text-xl">AUTO MECHANISM</p>
               </div>
 
+              <div className="flex flex-col">
+                <h1 className="font-semibold text-2xl">LIQUIDITY</h1>
+                <p className="text-lg md:text-xl">AUTO INCREASE</p>
+              </div>
+
             </div>
           </div>
 
@@ -152,8 +157,7 @@ export default function Home() {
               <div className="relative flex flex-col md:flex-row md:items-center mb-16 group">
                 <div className="md:w-1/2 md:pr-8 md:text-right">
                   <div className="bg-gradient-to-r from-amber-500 to-amber-600 p-6 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl ml-12 md:ml-0">
-                    <h3 className="text-2xl font-bold mb-3">Phase 1: Meme Genesis</h3>
-                    <p className="text-sm opacity-90 mb-4">Q1 2024</p>
+                    <h3 className="text-2xl font-bold mb-3">PHASE 1</h3>
                     <ul className="text-left space-y-2">
                       <li>• Token Launch & Community Building</li>
                       <li>• Social Media Campaigns</li>
@@ -169,8 +173,7 @@ export default function Home() {
               <div className="relative flex flex-col md:flex-row-reverse md:items-center mb-16 group">
                 <div className="md:w-1/2 md:pl-8">
                   <div className="bg-gradient-to-r from-amber-500 to-amber-600 p-6 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl ml-12 md:ml-0">
-                    <h3 className="text-2xl font-bold mb-3">Phase 2: Utility Development</h3>
-                    <p className="text-sm opacity-90 mb-4">Q2-Q3 2024</p>
+                    <h3 className="text-2xl font-bold mb-3">PHASE 2</h3>
                     <ul className="space-y-2">
                       <li>• DeFi Integration</li>
                       <li>• NFT Marketplace Launch</li>
@@ -186,8 +189,7 @@ export default function Home() {
               <div className="relative flex flex-col md:flex-row md:items-center mb-16 group">
                 <div className="md:w-1/2 md:pr-8 md:text-right">
                   <div className="bg-gradient-to-r from-amber-500 to-amber-600 p-6 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl ml-12 md:ml-0">
-                    <h3 className="text-2xl font-bold mb-3">Phase 3: Metaverse Foundation</h3>
-                    <p className="text-sm opacity-90 mb-4">Q4 2024 - Q1 2025</p>
+                    <h3 className="text-2xl font-bold mb-3">PHASE 3</h3>
                     <ul className="text-left space-y-2">
                       <li>• Virtual Land Development</li>
                       <li>• Metaverse Beta Launch</li>
@@ -203,8 +205,7 @@ export default function Home() {
               <div className="relative flex flex-col md:flex-row-reverse md:items-center mb-16 group">
                 <div className="md:w-1/2 md:pl-8">
                   <div className="bg-gradient-to-r from-amber-500 to-amber-600 p-6 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl ml-12 md:ml-0">
-                    <h3 className="text-2xl font-bold mb-3">Phase 4: Smart City Integration</h3>
-                    <p className="text-sm opacity-90 mb-4">Q2-Q4 2025</p>
+                    <h3 className="text-2xl font-bold mb-3">PHASE 4</h3>
                     <ul className="space-y-2">
                       <li>• Real Estate Partnerships</li>
                       <li>• City Infrastructure Planning</li>
@@ -220,8 +221,7 @@ export default function Home() {
               <div className="relative flex flex-col md:flex-row md:items-center group">
                 <div className="md:w-1/2 md:pr-8 md:text-right">
                   <div className="bg-gradient-to-r from-amber-500 to-amber-600 p-6 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl ml-12 md:ml-0">
-                    <h3 className="text-2xl font-bold mb-3">Phase 5: Mega City Launch</h3>
-                    <p className="text-sm opacity-90 mb-4">2026+</p>
+                    <h3 className="text-2xl font-bold mb-3">PHASE 5</h3>
                     <ul className="text-left space-y-2">
                       <li>• 200,000 Citizen Onboarding</li>
                       <li>• Full Metaverse Integration</li>
