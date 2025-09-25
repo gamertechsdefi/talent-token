@@ -380,7 +380,7 @@ function FAQSection() {
       answer: "Phase 3 (Years 5–8) will see the launch of the blockchain-powered mega city and its metaverse twin."
     },
     {
-      question: "Is $TAL deflationary?",
+      question: "Is $TALENT deflationary?",
       answer: "Yes, auto-burn and reflections create long-term scarcity."
     },
     {
