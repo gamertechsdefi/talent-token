@@ -395,7 +395,7 @@ function FAQSection() {
     <div className="space-y-4">
       {faqs.map((faq, index) => (
         <div key={index} className="group">
-          <div className="bg-amber-700 text-white rounded-lg overflow-hidden">
+          <div className="bg-black text-white rounded-lg overflow-hidden">
             <button 
               onClick={() => setOpenFAQ(openFAQ === index ? null : index)}
               className="w-full p-6 text-left flex justify-between items-center"
