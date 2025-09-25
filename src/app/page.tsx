@@ -354,6 +354,14 @@ export default function Home() {
             >
               <FaTelegram size={20} />
             </a>
+            <a 
+              href="https://t.me/talenttokens" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="w-10 h-10 bg-white text-amber-700 rounded flex items-center justify-center hover:bg-gray-100 transition-colors"
+            >
+              <FaTelegram size={20} />
+            </a>
           </div>
         </div>
       </footer>
