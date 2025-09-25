@@ -38,7 +38,7 @@ const Header: React.FC = () => {
       {/* Social Icons - Mobile Only */}
       <div className="flex gap-2 md:hidden">
         <a 
-          href="https://twitter.com/talenttoken" 
+          href="https://x.com/talenttokes" 
           target="_blank" 
           rel="noopener noreferrer"
           className="w-8 h-8 bg-amber-700 text-white rounded flex items-center justify-center hover:bg-amber-600 transition-colors"
@@ -46,7 +46,7 @@ const Header: React.FC = () => {
           <FaXTwitter size={20} />
         </a>
         <a 
-          href="https://t.me/talenttoken" 
+          href="https://t.me/talenttokens1" 
           target="_blank" 
           rel="noopener noreferrer"
           className="w-8 h-8 bg-amber-700 text-white rounded flex items-center justify-center hover:bg-amber-600 transition-colors"

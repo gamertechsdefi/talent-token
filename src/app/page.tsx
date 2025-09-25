@@ -96,7 +96,7 @@ export default function Home() {
 
             <div className="rounded-xl p-4  md:px-16 md:py-8  bg-neutral-100 border-t-2 border-l-2 border-b-5 border-r-5 border-red-500">
               <h1 className="flex flex-col">
-                <span className="font-bold text-3xl">15%</span>
+                <span className="font-bold text-3xl">10%</span>
                 <span className="text-lg">TEAM</span>
               </h1>
             </div>
@@ -339,7 +339,7 @@ export default function Home() {
           {/* Social Links */}
           <div className="flex gap-2">
             <a 
-              href="https://twitter.com/talenttoken" 
+              href="https://x.com/talenttokes" 
               target="_blank" 
               rel="noopener noreferrer"
               className="w-10 h-10 bg-white text-amber-700 rounded flex items-center justify-center hover:bg-gray-100 transition-colors"
@@ -347,7 +347,7 @@ export default function Home() {
               <FaXTwitter size={20} />
             </a>
             <a 
-              href="https://t.me/talenttoken" 
+              href="https://t.me/talenttokens1" 
               target="_blank" 
               rel="noopener noreferrer"
               className="w-10 h-10 bg-white text-amber-700 rounded flex items-center justify-center hover:bg-gray-100 transition-colors"
