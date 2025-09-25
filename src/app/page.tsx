@@ -42,7 +42,7 @@ export default function Home() {
             />
             <div className="absolute inset-0 flex flex-col justify-center px-8 text-black">
               <h1 className="text-5xl font-bold pb-4">About us</h1>
-              <p className="md:text-lg">Talent Token ($TAL) is a blockchain ecosystem designed to evolve over a decade — beginning as a viral meme coin and maturing into the official currency of a smart mega city and its metaverse twin.
+              <p className="md:text-lg">Talent Token ($TALENT) is a blockchain ecosystem designed to evolve over a decade — beginning as a viral meme coin and maturing into the official currency of a smart mega city and its metaverse twin.
 
                 We are creating the world&apos;s first cryptocurrency that evolves organically from meme hype into a global utility coin, deeply integrated into real-world economies and metaverse experiences.</p>
             </div>
