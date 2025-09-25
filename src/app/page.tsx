@@ -108,13 +108,6 @@ export default function Home() {
               </h1>
             </div>
 
-            <div className="rounded-xl p-4  md:px-16 md:py-8  bg-neutral-100 border-t-2 border-l-2 border-b-5 border-r-5 border-red-500">
-              <h1 className="flex flex-col">
-                <span className="font-bold text-3xl">5%</span>
-                <span className="text-lg">RESERVE</span>
-              </h1>
-            </div>
-
           </div>
 
           <div className="bg-amber-800 p-4 mt-8 rounded-2xl flex flex-col items-center w-full max-w-5xl">
