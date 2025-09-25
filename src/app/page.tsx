@@ -14,7 +14,7 @@ export default function Home() {
         <section className="flex flex-col h-screen text-center md:text-left items-center  justify-center px-4 md:px-16">
           <div className="flex flex-col-reverse md:flex-row items-center justify-between md:px-32 md:gap-32 mt-8">
             <div>
-               <h1 className="text-7xl md:text-9xl pb-4 text-amber-500 font-bold">$TALENT</h1>
+              <h1 className="text-7xl md:text-9xl pb-4 text-amber-500 font-bold">$TALENT</h1>
               <p className="text-3xl md:text-4xl pb-2 font-bold">BACKBONE OF THE FUTURE MEGA CITY </p>
               <p className="md:text-lg">The flagship crypto project powering a 200,000-citizen mega city and its metaverse twin. From meme culture
                 to real-world finance, $TALENT is more than currency; it&apos;s a movement of creativity, innovation,
@@ -41,12 +41,27 @@ export default function Home() {
               className="w-full h-auto max-w-md"
             />
             <div className="absolute inset-0 flex flex-col justify-center px-8 text-black">
-              <h1 className="text-5xl font-bold pb-4">About us</h1>
+              <h1 className="text-5xl font-bold pb-2">About us</h1>
               <p className="md:text-lg">Talent Token ($TALENT) is a blockchain ecosystem designed to evolve over a decade — beginning as a viral meme coin and maturing into the official currency of a smart mega city and its metaverse twin.
 
                 We are creating the world&apos;s first cryptocurrency that evolves organically from meme hype into a global utility coin, deeply integrated into real-world economies and metaverse experiences.</p>
+              <div className="relative z-10 mt-2">
+                <div className="flex gap-4">
+                  <a href="https://www.firescreener.com/bsc/0x38Aec84f305564cB2625430A294382Cf33e3c317" className="bg-black p-4 rounded-xl hover:bg-gray-700 transition-all">
+                    <Image src="/images/firescreener-logo.png" alt="Window" width={20} height={20} />
+                  </a>
+                  <a href="https://bscscan.com/token/0x38Aec84f305564cB2625430A294382Cf33e3c317" className="bg-black p-4 rounded-xl hover:bg-gray-700 transition-all">
+                    <Image src="/images/bscscan.png" alt="File" width={20} height={20} />
+                  </a>
+                  <a href="https://dexscreener.com/bsc/0x78b1de9543960ad9d1a7bc5f3dff86b016fc9fa2" className="bg-black p-4 rounded-xl hover:bg-gray-700 transition-all">
+                    <Image src="/images/dexscreener-b.png" alt="Globe" width={20} height={20} />
+                  </a>
+                </div>
+              </div>
             </div>
+
           </div>
+
         </section>
 
         <section className="bg-amber-100 flex flex-col px-6 md:px-16 py-32 items-center ">
@@ -134,6 +149,7 @@ export default function Home() {
               </div>
 
             </div>
+
           </div>
 
         </section>
@@ -141,11 +157,11 @@ export default function Home() {
         <section className="py-24 md:py-32 px-4 md:px-16">
           <div className="max-w-6xl mx-auto">
             <h1 className="text-5xl md:text-7xl font-bold text-center mb-16">ROADMAP</h1>
-            
+
             <div className="relative">
               {/* Timeline line */}
               <div className="absolute left-4 md:left-1/2 md:transform md:-translate-x-0.5 top-0 bottom-0 w-1 bg-gradient-to-b from-amber-600 to-amber-700"></div>
-              
+
               {/* Phase 1 */}
               <div className="relative flex flex-col md:flex-row md:items-center mb-16 group">
                 <div className="md:w-1/2 md:pr-8 md:text-right">
@@ -229,11 +245,11 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-24 md:py-32 px-4 md:px-16 border-t-3 border-b-3 border-amber-200 bg-cover bg-center bg-no-repeat bg-fixed" style={{backgroundImage: 'url("/images/bg-01.png")', minHeight: '600px'}}>
+        <section className="py-24 md:py-32 px-4 md:px-16 border-t-3 border-b-3 border-amber-200 bg-cover bg-center bg-no-repeat bg-fixed" style={{ backgroundImage: 'url("/images/bg-01.png")', minHeight: '600px' }}>
           <div className="max-w-6xl mx-auto">
             <h1 className="text-5xl md:text-7xl font-bold text-center mb-4 text-amber-500">HOW TO BUY</h1>
             <p className="text-center text-lg md:text-xl mb-16 text-gray-300">Get your $TALENT tokens in 4 simple steps</p>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {/* Step 1 */}
               <div className="group">
@@ -285,7 +301,7 @@ export default function Home() {
               <button className="bg-gradient-to-r from-amber-500 to-amber-600 px-8 py-4 rounded-lg font-bold text-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105">
                 Buy on PancakeSwap
               </button>
-              <button 
+              <button
                 onClick={() => {
                   navigator.clipboard.writeText('0x38Aec84f305564cB2625430A294382Cf33e3c317');
                   alert('Contract address copied to clipboard!');
@@ -302,7 +318,7 @@ export default function Home() {
         <section className="py-16 px-4 md:px-16 bg-amber-200">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-5xl md:text-7xl font-bold text-center text-amber-700 mb-16 ">FAQs</h1>
-            
+
             <FAQSection />
           </div>
         </section>
@@ -331,25 +347,25 @@ export default function Home() {
 
           {/* Social Links */}
           <div className="flex gap-2">
-            <a 
-              href="https://x.com/talenttokes" 
-              target="_blank" 
+            <a
+              href="https://x.com/talenttokes"
+              target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 bg-white text-amber-700 rounded flex items-center justify-center hover:bg-gray-100 transition-colors"
             >
               <FaXTwitter size={20} />
             </a>
-            <a 
-              href="https://t.me/talenttokens1" 
-              target="_blank" 
+            <a
+              href="https://t.me/talenttokens1"
+              target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 bg-white text-amber-700 rounded flex items-center justify-center hover:bg-gray-100 transition-colors"
             >
               <FaTelegram size={20} />
             </a>
-            <a 
-              href="https://t.me/talenttokens" 
-              target="_blank" 
+            <a
+              href="https://t.me/talenttokens"
+              target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 bg-white text-amber-700 rounded flex items-center justify-center hover:bg-gray-100 transition-colors"
             >
@@ -373,8 +389,8 @@ function FAQSection() {
     {
       question: "How will Talent Token create real-world impact?",
       answer: "Through CSR initiatives — food banks, education grants, and citizen benefits funded by tokenomics and DAO governance."
- 
-   },
+
+    },
     {
       question: "When will the Mega City launch?",
       answer: "Phase 3 (Years 5–8) will see the launch of the blockchain-powered mega city and its metaverse twin."
@@ -394,7 +410,7 @@ function FAQSection() {
       {faqs.map((faq, index) => (
         <div key={index} className="group">
           <div className="bg-black text-white rounded-lg overflow-hidden">
-            <button 
+            <button
               onClick={() => setOpenFAQ(openFAQ === index ? null : index)}
               className="w-full p-6 text-left flex justify-between items-center"
             >
